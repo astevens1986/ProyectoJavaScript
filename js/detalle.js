@@ -21,14 +21,31 @@ $(document).ready(function () {
   })
 
   //Crea un string que contenga el HTML que describe el detalle del evento
-  var html = `
-  <h2>${evento.nombre}</h2>
-  <p>${evento.fecha}</p>
-  <p>Lugar: ${evento.lugar}</p
-  <p>Descripción: ${evento.descripcion}</p>
-  <p>Costo: ${evento.precio}</p>
-  <p>Invitados: ${evento.invitados}</p>
-  `
+  
+  //var html = `
+  //<h2>${evento.nombre}</h2>
+  //<p>${evento.fecha}</p>
+  //<p>Lugar: ${evento.lugar}</p
+  //<p>Descripción: ${evento.descripcion}</p>
+  //<p>Costo: ${evento.precio}</p>
+  //<p>Invitados: ${evento.invitados}</p>
+  //`
+
+  var html = `<div class="col-md-12">
+  <div class="card flex-md-row mb-4 h-md-250">
+    <div class="card-body d-flex flex-column align-items-start">
+      <h3 class="mb-0">
+        <a href="detalle.html?id=${evento.id}">${evento.nombre}</a>
+      </h3>
+      <div class="mb-1 text-muted">${evento.fecha}</div>
+      <p class="card-text mb-auto">${evento.descripcion}
+      </p>
+      <p class="card-text mb-auto">Invitados: ${evento.invitados}</p>
+
+
+    </div> 
+  </div>
+</div>`
 
   //Modifica el DOM agregando el html generado dentro del div con id=evento
   document.getElementById("evento").innerHTML = html
