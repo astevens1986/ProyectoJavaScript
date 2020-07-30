@@ -59,15 +59,6 @@ $(document).ready(function () {
   var eventosPasados2HTML = ""
 
   //Recorre el arreglo y concatena el HTML para cada evento
- 
-
-//  eventosPasados2.forEach(evento => {
-//    eventosPasados2HTML += "<div style=\"background-color: rgba(237,223,245,0.85);width: 25em; padding: 0.7em 1.5em; border-radius: 0.3em;     margin-left:8%; \">";
-//    eventosPasados2HTML += "<a style=\"font-weight: 550; font-size: 150%; border-top: 1em;\" href=\"detalle.html?id=1\">" + evento.nombre + "</a>"
-//    eventosPasados2HTML += "<p style=\"font-family:'Calibri'; font-size: 90%; color:grey;\">" + evento.fecha + "</p>"
-//    eventosPasados2HTML += "<p class=\"descr\">" + evento.descripcion + "</p>"
- //   eventosPasados2HTML += "</div>"
- // });
 
  for(var j = 0; j < eventosPasados2.length; j++){
   eventosPasados2HTML += `<div class="col-md-6">
@@ -79,7 +70,7 @@ $(document).ready(function () {
                   <div class="mb-1 text-muted">${eventosPasados2[j].fecha}</div>
                   <p class="card-text mb-auto">${eventosPasados2[j].descripcion}
                   </p>
-                  <p class="card-text mb-auto">Invitados: ${eventosPasados2[j].invitados}</p>
+                 
 
 
                 </div> 
@@ -97,13 +88,6 @@ $(document).ready(function () {
 
   //Recorre el arreglo y concatena el HTML para cada evento
 
-  // eventosProximos2.forEach(evento => {
-   //  eventosProximos2HTML += "<div style=\"background-color: rgba(237,223,245,0.85);width: 25em; padding: 0.7em 1.5em; border-radius: 0.3em;     margin-left:8%; \">";
-    // eventosProximos2HTML += "<a style=\"font-weight: 550; font-size: 150%; border-top: 1em;\" href=\"detalle.html? + evento.id\">" + evento.nombre + "</a>"
-   // eventosProximos2HTML += "<p style=\"font-family:'Calibri'; font-size: 90%; color:grey;\">" + evento.fecha + "</p>"
-    // eventosProximos2HTML += "<p class=\"descr\">" + evento.descripcion + "</p>"
-    //eventosProximos2HTML += "</div>" 
-  // }); 
 
   for(var j = 0; j < eventosProximos2.length; j++){
     eventosProximos2HTML += `<div class="col-md-6">
@@ -115,9 +99,6 @@ $(document).ready(function () {
                     <div class="mb-1 text-muted">${eventosProximos2[j].fecha}</div>
                     <p class="card-text mb-auto">${eventosProximos2[j].descripcion}
                     </p>
-                    <p class="card-text mb-auto">Invitados: ${eventosProximos2[j].invitados}</p>
-
-
                   </div> 
                 </div>
              </div>`

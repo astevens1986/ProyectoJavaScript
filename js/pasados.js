@@ -43,12 +43,10 @@ $(document).ready(function () {
                     <h3 class="mb-0">
                       <a href="detalle.html?id=${pasados[j].id}">${pasados[j].nombre}</a>
                     </h3>
-                    <div class="mb-1 text-muted">${pasados[j].fecha}</div>
+                    <div class="mb-1 text-muted">${pasados[j].fecha + " " + pasados[j].lugar }</div>
                     <p class="card-text mb-auto">${pasados[j].descripcion}
                     </p>
                     <p class="card-text mb-auto">Invitados: ${pasados[j].invitados}</p>
-
-
                   </div> 
                 </div>
              </div>`

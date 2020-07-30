@@ -37,9 +37,9 @@ $(document).ready(function () {
       <h3 class="mb-0">
         <a href="detalle.html?id=${evento.id}">${evento.nombre}</a>
       </h3>
-      <div class="mb-1 text-muted">${evento.fecha}</div>
-      <p class="card-text mb-auto">${evento.descripcion}
-      </p>
+      <div class="mb-1 text-muted">${evento.fecha + " " + evento.lugar}</div>
+      <p class="card-text mb-auto">${evento.descripcion}</p>
+      <p class="card-text mb-auto">Costo: ${evento.precio}</p>
       <p class="card-text mb-auto">Invitados: ${evento.invitados}</p>
 
 

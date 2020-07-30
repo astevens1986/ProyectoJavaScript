@@ -42,10 +42,10 @@ $(document).ready(function () {
                     <h3 class="mb-0">
                       <a href="detalle.html?id=${proximos[j].id}">${proximos[j].nombre}</a>
                     </h3>
-                    <div class="mb-1 text-muted">${proximos[j].fecha}</div>
+                    <div class="mb-1 text-muted">${proximos[j].fecha + " " + proximos[j].lugar }</div>
                     <p class="card-text mb-auto">${proximos[j].descripcion}
                     </p>
-                    <p class="card-text mb-auto">Invitados: ${proximos[j].invitados}</p>
+                    <p class="card-text mb-auto">Costo: ${proximos[j].precio}</p>
 
 
                   </div> 
