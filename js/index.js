@@ -63,7 +63,7 @@ $(document).ready(function () {
 
   eventosPasados2.forEach(evento => {
     eventosPasados2HTML += "<div style=\"background-color: rgba(237,223,245,0.85);width: 25em; padding: 0.7em 1.5em; border-radius: 0.3em;     margin-left:8%; \">";
-    eventosPasados2HTML += "<a style=\"font-weight: 550; font-size: 150%; border-top: 1em;\" href=\"pasados.html\">" + evento.nombre + "</a>"
+    eventosPasados2HTML += "<a style=\"font-weight: 550; font-size: 150%; border-top: 1em;\" href=\"detalle.html?id=1\">" + evento.nombre + "</a>"
     eventosPasados2HTML += "<p style=\"font-family:'Calibri'; font-size: 90%; color:grey;\">" + evento.fecha + "</p>"
     eventosPasados2HTML += "<p class=\"descr\">" + evento.descripcion + "</p>"
     eventosPasados2HTML += "</div>"
